@@ -14,7 +14,7 @@
 			<tr>
 				<th scope="row"><%= post.id %></th>
 				<td><%= link_to post.body.truncate(30), admin_post_path(post) %></td>
-				<td><%= post.user.name %></td>
+				<td><%= image_tag(post.user.avatar, class: "ui-w-100-forced rounded-circle mr-3", style: "width: 30px; height: 30px")%><%= post.user.name %></td>
 				<td><%= post.created_at.strftime("%d/%m/%Y %H:%M") %></td>
 		<% end %>
 	</tbody>

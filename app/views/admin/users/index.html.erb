@@ -22,8 +22,8 @@
         <td><%= user.name %></td>
         <td><%= user.email %></td>
         <td><%= user.phone %></td>
-        <td><%= 01 %></td>
-        <td><%= 01 %></td>
+        <td><%= user.following.count %></td>
+        <td><%= user.followers.count %></td>
         <td><%= user.created_at.strftime("%d/%m/%Y %H:%M") %></td>
       </tr>
     <% end %>
